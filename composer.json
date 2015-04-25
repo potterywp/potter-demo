@@ -1,0 +1,13 @@
+{
+    "name": "potterywp/base-theme",
+    "description": "Base PotteryWP Theme ",
+    "license": "MIT",
+    "authors": [{
+        "name": "Vinicius Reis",
+        "email": "luiz.vinicius73@gmail.com"
+    }],
+    "require": {
+        "potterywp/potter": "1.*"
+    },
+    "minimum-stability": "stable"
+}

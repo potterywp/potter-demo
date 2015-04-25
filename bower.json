@@ -1,0 +1,13 @@
+{
+    "name": "biorh",
+    "version": "0.1.0",
+    "authors": [
+        "Vinicius Reis <luiz.vinicius73@gmail.com>"
+    ],
+    "description": "Base Theme",
+    "license": "MIT",
+    "homepage": "https://github.com/potterywp/potter",
+    "dependencies": {
+        "bootstrap": "~3.3.4"
+    }
+}
