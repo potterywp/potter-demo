@@ -10,3 +10,5 @@ $features = Potter::features();
 $features->addMenu('main', __('Main Menu'));
 
 $features->addThemeSupport('post-thumbnails');
+
+$features->addPostTypeSupport('page', 'excerpt');
