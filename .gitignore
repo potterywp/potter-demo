@@ -3,4 +3,7 @@
 /node_modules
 /vendor
 /bower_components
+/assets/dist/js/vendor.js
+/assets/dist/css/vendor.css
 composer.lock
+*.min.*
