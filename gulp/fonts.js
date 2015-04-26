@@ -6,7 +6,7 @@ var $ = require('gulp-load-plugins')({
 });
 
 module.exports = function(options) {
-  gulp.task('fonts', function () {
+  gulp.task('fonts', ['clear:fonts'], function () {
     return gulp.src($.mainBowerFiles())
       .pipe($.filter('**/*.{eot,svg,ttf,woff,woff2}'))
       .pipe($.flatten())

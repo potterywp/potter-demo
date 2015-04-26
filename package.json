@@ -13,6 +13,7 @@
     "gulp-concat": "^2.5.2",
     "gulp-cssmin": "^0.1.7",
     "gulp-filter": "^2.0.2",
+    "gulp-flatten": "0.0.4",
     "gulp-imagemin": "^2.2.1",
     "gulp-inject": "^1.2.0",
     "gulp-jshint": "^1.10.0",
@@ -32,13 +33,10 @@
     "imagemin-pngquant": "^4.1.0",
     "jshint": "^2.7.0",
     "jshint-loader": "^0.8.3",
+    "main-bower-files": "^2.7.0",
     "traceur-loader": "^0.6.3",
+    "uglify-save-license": "^0.4.1",
     "wiredep": "^2.2.2",
     "wrench": "^1.5.8"
-  },
-  "dependencies": {
-    "gulp-flatten": "0.0.4",
-    "main-bower-files": "^2.7.0",
-    "uglify-save-license": "^0.4.1"
   }
 }

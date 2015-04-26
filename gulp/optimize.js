@@ -5,8 +5,12 @@ var pngcrush = require('imagemin-pngcrush');
 var $ = require('gulp-load-plugins')();
 
 module.exports = function(options) {
-  gulp.task('optimize', function() {
-    return gulp.src(options.src + '/img/*')
+  gulp.task('optimize', ['clear:images'], function() {
+
+    var srcPath = options.src + '/img';
+    var distPath = options.dist + '/img';
+
+    return gulp.src(srcPath + '/**')
       .pipe($.imagemin({
         progressive: true,
         svgoPlugins: [{
@@ -14,6 +18,6 @@ module.exports = function(options) {
         }],
         use: [pngcrush()]
       }))
-      .pipe(gulp.dest(options.dist + '/img/'));
+      .pipe(gulp.dest(distPath));
   });
 };
