@@ -5,11 +5,13 @@
   "description": "Base Wordpress Theme Development",
   "license": "GNU General Public Licence 2.0",
   "devDependencies": {
+    "bower-webpack-plugin": "^0.1.8",
     "del": "^1.1.1",
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.2.0",
     "gulp-cache": "^0.2.8",
     "gulp-concat": "^2.5.2",
+    "gulp-concat-vendor": "0.0.4",
     "gulp-filter": "^2.0.2",
     "gulp-imagemin": "^2.2.1",
     "gulp-inject": "^1.2.0",
@@ -25,8 +27,17 @@
     "gulp-strip-debug": "^1.0.2",
     "gulp-uglify": "^1.2.0",
     "gulp-util": "^3.0.4",
+    "gulp-webpack": "^1.4.0",
     "imagemin-pngquant": "^4.1.0",
+    "jshint": "^2.7.0",
+    "jshint-loader": "^0.8.3",
+    "traceur-loader": "^0.6.3",
     "wiredep": "^2.2.2",
     "wrench": "^1.5.8"
+  },
+  "dependencies": {
+    "gulp-flatten": "0.0.4",
+    "main-bower-files": "^2.7.0",
+    "uglify-save-license": "^0.4.1"
   }
 }
