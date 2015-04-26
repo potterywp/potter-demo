@@ -16,7 +16,11 @@ var options = {
   },
   wiredep: {
     directory: 'bower_components',
-    exclude: [/bootstrap\.css/, /bootstrap\.less/]
+    exclude: [/bootstrap\.css/, /bootstrap\.less/, /jquery\.js/]
+  },
+  scripts: {
+    filter: ['*.js', '!jquery**.js'],
+    copyFilter: ['**', '!main.js']
   }
 };
 
@@ -25,3 +29,6 @@ wrench.readdirSyncRecursive('./gulp').filter(function(file) {
 }).map(function(file) {
   require('./gulp/' + file)(options);
 });
+
+gulp.task('default', ['build']);
+gulp.task('w', ['watch']);

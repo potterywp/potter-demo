@@ -8,6 +8,7 @@
   "license": "MIT",
   "homepage": "https://github.com/potterywp/potter",
   "dependencies": {
-    "bootstrap": "~3.3.4"
+    "bootstrap": "~3.3.4",
+    "jquery-migrate": "~1.2.1"
   }
 }

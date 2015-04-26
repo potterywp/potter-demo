@@ -8,7 +8,7 @@ module.exports = function(options) {
 
     var lessPath = '/less';
 
-    gulp.task('styles', function() {
+    gulp.task('styles', ['clear:styles'] ,function() {
         var lessOptions = {
             options: [
                 'bower_components',

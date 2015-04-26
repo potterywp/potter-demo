@@ -56,20 +56,23 @@ module.exports = function(options) {
       .pipe(gulp.dest(options.dist + '/js'));
   }
 
-  gulp.task('scripts', function() {
+  gulp.task('scripts:main', function() {
     return webpack(false);
   });
 
   gulp.task('scripts:vendor', function() {
-    var jsFilter = $.filter('*.js');
+    var jsFilter = $.filter(options.scripts.filter);
     var files = $.mainBowerFiles();
+
     return gulp.src(files)
       .pipe(jsFilter)
       .pipe($.concat('vendor.js'))
       .pipe(gulp.dest(options.dist + '/js'));
   });
 
-  gulp.task('scripts:watch', ['scripts', 'scripts:vendor'], function(callback) {
+  gulp.task('scripts', ['scripts:main', 'scripts:vendor']);
+
+  gulp.task('scripts:watch', ['scripts'], function(callback) {
     return webpack(true, callback);
   });
 };
